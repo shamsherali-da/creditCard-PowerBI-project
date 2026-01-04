@@ -56,4 +56,26 @@
 
  -- select current_user
   
+-- __________________________________________________________________________________
+  -- before Added data :
+  
+  select * from cc_detail;
+  select * from cust_detail;
+  
+ 
+ --  extra  Data added ::
+ copy  cc_detail
+ from 'D:\Data_Analyst\AlexDataAnalystBootcamp\PowerBI\projects\credit_card_PowerBI_project\cc_add.csv'
+ delimiter ','
+ csv header ;
+
+  select from cc_detail
+
+ copy cust_detail
+ from  ' D:\Data_Analyst\AlexDataAnalystBootcamp\PowerBI\projects\credit_card_PowerBI_project\cust_add.csv '
+ delimiter ','
+ csv header ;
+
+    select * from cust_detail;
+
 
